@@ -1,4 +1,4 @@
-## UAS
+# Project UAS - Semester 1
 
 ```Python
 Nama    : Rafi Maulana Firdaus
@@ -6,25 +6,15 @@ NIM     : 312210382
 Kelas   : TI 22 A4
 Matkul  : Bahasa Pemrograman
 ```
-# Project UAS - Semester 1
-
-#### Buatlah package dan modul dengan struktur seperti berikut:
-- daftar_nilai.py berisi modul untuk:
-tambah_data, ubah_data, hapus_data,
-dan cari_data
-- view_nilai.py berisi modul untuk:
-cetak_daftar_nilai, cetak_hasil_pencarian
-- input_nilai.py berisi modul untuk:
-input_data yang meminta pengguna
-memasukkan data.
-- main.py berisi program utama (menu
-pilihan yang memanggil semua menu
-yang ada)   
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-### 1. Mengisi `main.py` dengan program berupa menu utama yang berisi
-`menu = input("[(T)ambah, (I)nput Nilai, (L)ihat, (C)ari, (H)apus, (U)bah, (K)eluar] : ")`
+## Penjelasan
+> Konsep projek ini membuat sebuah daftar mahasiwa dan daftar nilainya, yang nantinya dapat menambahkan  data mahasiswa, menambahkan nim, melihat, mencari, dan menghapus data mahasiswa yang telah di input. Dengan menggunakan bahasa pemrograman Python yang dimana tugas-tugas tersebut dapat dibungkus menjadi sebuah Package (Folder) yang didalamnya terdapat Modul (File). Konsep Package dan Modul memudahkan untuk mengorganisir sebuah program.
+
+## Tampilan Menu Utama
+> Mengisi `main.py` dengan program berupa menu utama yang berisi   
+> `menu = input("[(T)ambah, (I)nput Nilai, (L)ihat, (C)ari, (H)apus, (U)bah, (K)eluar] : ")` ``
 
 ``` Python
 from view import input_nilai, view_nilai
