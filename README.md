@@ -23,7 +23,7 @@ yang ada)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-## 1. `main.py` Berisi program utama dengan menu `menu = input("[(T)ambah, (I)nput Nilai, (L)ihat, (C)ari, (H)apus, (U)bah, (K)eluar] : ")`
+### 1. `main.py` Berisi program utama dengan menu `menu = input("[(T)ambah, (I)nput Nilai, (L)ihat, (C)ari, (H)apus, (U)bah, (K)eluar] : ")`
 
 ``` Python
 from view import input_nilai, view_nilai
