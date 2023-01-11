@@ -1,4 +1,5 @@
-# Project-UAS
+# UAS
+Project UAS Semester 1
 
 #### Buatlah package dan modul dengan struktur seperti berikut:
 - daftar_nilai.py berisi modul untuk:
@@ -13,7 +14,7 @@ memasukkan data.
 pilihan yang memanggil semua menu
 yang ada)
 
-### 1. `main.py` Berisi program utama dengan menu `menu = input("[(T)ambah, (I)nputNilai, (L)ihat, (C)ari, (H)apus, (U)bah, (K)eluar] : ")`
+### 1. `main.py` Berisi program utama dengan menu `menu = input("[(T)ambah, (I)nput Nilai, (L)ihat, (C)ari, (H)apus, (U)bah, (K)eluar] : ")`
 
 ``` Python
 from view import input_nilai, view_nilai
@@ -139,7 +140,7 @@ dan mencari salah satu data yg sudah di input.
 #### Tampilan output ubah NIM :
 ![04](https://user-images.githubusercontent.com/115614668/211689039-e398f23d-4a91-4cec-93cb-b985c04d7398.png)  
 #### Tampilan output cari data :
-
+![05](https://user-images.githubusercontent.com/115614668/211708058-ff5fca5c-fb94-45bd-a618-9e4dfc30dab8.png)
 
 
 ### 3. `view_nilai.py` berisi sourcode yg berfungsi menampilkan seluruh data
@@ -185,4 +186,4 @@ Di program ini terdapat modul yg menyambungkann `input_nilai.py` kedalam file pr
 dengan syntax `from model import daftar_nilai`. Fitur ini khusus untuk menginput nilai
 
 #### Tampilan output `input_nilai.py` :
-![6](Picture/Gambar6.png)
+![06](https://user-images.githubusercontent.com/115614668/211708382-42a6aa04-9c16-4df7-ae40-3ace6e03bc03.png)
