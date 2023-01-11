@@ -14,7 +14,7 @@ Matkul  : Bahasa Pemrograman
 
 ## Tampilan Menu Utama
 > Mengisi `main.py` dengan program berupa menu utama yang berisi   
-> `menu = input("[(T)ambah, (I)nput Nilai, (L)ihat, (C)ari, (H)apus, (U)bah, (K)eluar] : ")` ``
+> `menu = input("[(T)ambah, (I)nput Nilai, (L)ihat, (C)ari, (H)apus, (U)bah, (K)eluar] : ")`
 
 ``` Python
 from view import input_nilai, view_nilai
@@ -53,8 +53,8 @@ while True:
     else:
         print("\n INPUT {} TIDAK ADA!, Silakan pilih [T/L/I/H/U/K] untuk menjalankan program!".format(menu))
 ```
-### Penjelasan 
-Di program utama ini terdapat modul yg di import ke file `from view import input_nilai, view_nilai` &
+## Penjelasan 
+> Di program utama ini terdapat modul yg di import ke file `from view import input_nilai, view_nilai` &
 `from model import daftar_nilai`. Modul memungkinkan Anda menulis kode yang terdiri dari beberapa file dan membaginya menjadi bagian-bagian yang lebih kecil, yang dapat diimport sesuai kebutuhan.
 
 #### Contoh tampilan menu :
@@ -62,8 +62,9 @@ Di program utama ini terdapat modul yg di import ke file `from view import input
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-### 2. `daftar_nilai.py`
-Di dalam file daftar nilai ini terdapat sourcecode `input("[(T)ambah, (C)ari, (H)apus, (U)bah] ")`
+## Daftar Nilai
+> Di dalam file `daftar_nilai.py` ini terdapat sourcecode `input("[(T)ambah, (C)ari, (H)apus, (U)bah] ")`
+
 
 ``` Python
 class Data_mahasiswa:
@@ -131,9 +132,10 @@ class Data_mahasiswa:
             print("NAMA {0} TIDAK ADA!".format(nama))
 ```
 
-### Penjelasan 
-Pada bagian dari `daftar_nilai.py` berisi program dengan perintah menambahkan data, hapus data, ubah data NIM,
+## Penjelasan 
+> Pada bagian dari `daftar_nilai.py` berisi program dengan perintah menambahkan data, hapus data, ubah data NIM,
 dan mencari salah satu data yg sudah di input.
+
 
 #### Tampilan output tambah data :
 ![02](https://user-images.githubusercontent.com/115614668/211688561-50f69df4-7c44-441c-b9ac-d8d4b152a637.png)  
@@ -146,7 +148,10 @@ dan mencari salah satu data yg sudah di input.
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-### 3. `view_nilai.py` berisi sourcode yg berfungsi menampilkan seluruh data
+## View Nilai
+> `view_nilai.py` berisi sourcode yg berfungsi menampilkan atau mencetak seluruh data yang telah di input sebelumnya, program ini menampilkan nama dan nim mahasiswa, nilai UAS, UTS, dan tugas
+
+
 
 ``` Python
 from model import daftar_nilai
@@ -161,14 +166,18 @@ def lihat():
         print(f"Nilai UAS     : {data.uas[i]}")
         print(f"Nilai TUGAS   : {data.tugas[i]}")
 ```
-### Penjelasan 
-Di program ini terdapat modul yg menyambungkan `view_nilai.py` kedalam file program `daftar_nilai.py` 
+
+## Penjelasan 
+> Di program ini terdapat modul yg menyambungkan `view_nilai.py` kedalam file program `daftar_nilai.py` 
 dengan syntax `from model import daftar_nilai`. Fungsi ny mirip seperti `input = "[(C)ari]"`, tapi fitur ini menampilkan
 seluruh data yg sudah di input.
 
+
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-### 4. `input_nilai.py` berisi code yg berfungsi untuk menginput data yaitu nilai
+## Input Nilai
+> `input_nilai.py` berisi code yg berfungsi untuk menginput data yaitu nilai
+
 
 ``` Python
 from model import daftar_nilai
@@ -186,8 +195,9 @@ def nilai():
         else:
             print("NAMA {0} TIDAK ADA! / ANDA BELUM MENAMBAH DATA".format(input_nama))
 ```
-### Penjelasan 
-Di program ini terdapat modul yg menyambungkann `input_nilai.py` kedalam file program `daftar_nilai.py` 
+
+## Penjelasan 
+> Di program ini terdapat modul yg menyambungkann `input_nilai.py` kedalam file program `daftar_nilai.py` 
 dengan syntax `from model import daftar_nilai`. Fitur ini khusus untuk menginput nilai
 
 #### Tampilan output `input_nilai.py` :
