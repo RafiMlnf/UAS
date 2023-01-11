@@ -1,5 +1,12 @@
-# UAS
-Project UAS Semester 1
+## UAS
+
+```Python
+Nama    : Rafi Maulana Firdaus
+NIM     : 312210382
+Kelas   : TI 22 A4
+Matkul  : Bahasa Pemrograman
+```
+# Project UAS - Semester 1
 
 #### Buatlah package dan modul dengan struktur seperti berikut:
 - daftar_nilai.py berisi modul untuk:
@@ -12,9 +19,11 @@ input_data yang meminta pengguna
 memasukkan data.
 - main.py berisi program utama (menu
 pilihan yang memanggil semua menu
-yang ada)
+yang ada)   
 
-### 1. `main.py` Berisi program utama dengan menu `menu = input("[(T)ambah, (I)nput Nilai, (L)ihat, (C)ari, (H)apus, (U)bah, (K)eluar] : ")`
+--------------------------------------------------------------------------------------------------------------------------------------
+
+## 1. `main.py` Berisi program utama dengan menu `menu = input("[(T)ambah, (I)nput Nilai, (L)ihat, (C)ari, (H)apus, (U)bah, (K)eluar] : ")`
 
 ``` Python
 from view import input_nilai, view_nilai
@@ -59,6 +68,8 @@ Di program utama ini terdapat modul yg di import ke file `from view import input
 
 #### Contoh tampilan menu :
 ![01](https://user-images.githubusercontent.com/115614668/211688008-ab60b7ec-e3f2-40fc-bc23-b8cd6892a5fe.png)
+
+------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 2. `daftar_nilai.py`
 Di dalam file daftar nilai ini terdapat sourcecode `input("[(T)ambah, (C)ari, (H)apus, (U)bah] ")`
@@ -142,6 +153,7 @@ dan mencari salah satu data yg sudah di input.
 #### Tampilan output cari data :
 ![05](https://user-images.githubusercontent.com/115614668/211708058-ff5fca5c-fb94-45bd-a618-9e4dfc30dab8.png)
 
+------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 3. `view_nilai.py` berisi sourcode yg berfungsi menampilkan seluruh data
 
@@ -162,6 +174,8 @@ def lihat():
 Di program ini terdapat modul yg menyambungkan `view_nilai.py` kedalam file program `daftar_nilai.py` 
 dengan syntax `from model import daftar_nilai`. Fungsi ny mirip seperti `input = "[(C)ari]"`, tapi fitur ini menampilkan
 seluruh data yg sudah di input.
+
+------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 4. `input_nilai.py` berisi code yg berfungsi untuk menginput data yaitu nilai
 
